@@ -39,9 +39,9 @@ def run_gpr(local=False):
 
     print("Stacking data.")
     #X = data[:,0:3133]
-    X = data.drop(['improvement'], axis=1)
+    X = data.drop(['1'], axis=1)
     #y_1 = data[:,3133:3134]
-    y_1 = data[['improvement']]
+    y_1 = data[['1']]
     
     print("Building ML model")
     model_1 = DecisionTreeClassifier(max_depth=10)  
